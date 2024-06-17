@@ -33,5 +33,4 @@ Si la racine entière est un entier, le tuple contient:
 Si la racine entière est un flottant (non entier), le tuple contient:
         la partie entière de la racine et un booléen qui est faux.
 
-
 """
