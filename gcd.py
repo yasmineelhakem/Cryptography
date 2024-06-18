@@ -7,7 +7,8 @@ print(math.gcd(26513, 32321))
 # Python program to demonstrate working of extended 
 # Euclidean Algorithm 
 	
-# function for extended Euclidean Algorithm 
+# function for extended Euclidean Algorithm
+
 def extended_euclidean(a, b):
   if b == 0:
     gcd, s, t = a, 1, 0
@@ -20,10 +21,11 @@ def extended_euclidean(a, b):
       a,b,s2,t2,s1,t1=b,r,s1,t1,s,t
     gcd,s,t=a,s2,t2
     return (gcd,s,t)
+
 a=26513
 b=32321
 x, y = a, b  # Store temporarily
 result=extended_euclidean(a,b)
-#Print the result
+
 print(f"gcd({x},{y})={result[0]}")
 print(f"Linear combination gcd(a,b)=sa+tb:\n {result[0]}={result[1]}*{x}+{result[2]}*{y}")
