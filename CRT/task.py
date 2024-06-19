@@ -24,4 +24,3 @@ with open("output.txt" , "w") as f :
         f.write(f"N{i} = {ciphertexts[i][1]}\n")
         f.write(f"e{i} = {ciphertexts[i][2]}\n")
         f.write("\n")
-
