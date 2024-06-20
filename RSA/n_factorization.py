@@ -24,3 +24,16 @@ print(long_to_bytes(m))
 
 # https://www.alpertron.com.ar/ECM.HTM  hedha site yfactorizi
 # fama zeda factordb
+
+
+from Crypto.Util.number import inverse
+p = 857504083339712752489993810777
+q = 1029224947942998075080348647219
+phi = (q-1)*(p-1)
+e = 65537
+d = inverse( e, phi )
+print(d)
+n = p*q
+c = 77578995801157823671636298847186723593814843845525223303932
+m = pow( c, d, n )
+print(m)

@@ -10,7 +10,7 @@ c=103486823211807845419679053154520126623135426689412095433052740822512816955077
 n = q*p
 print(n)
 
-phi = p*(p-1)  #whyyyyy kif tebda 3ana p=q nehsbou phi comme ca 
+phi = p*(p-1)
 
 print("phi=",phi)
 d = inverse( e, phi )
